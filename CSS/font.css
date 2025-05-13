@@ -1,27 +1,29 @@
 @font-face {
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 400;
   font-style: normal;
-  src: local("Manrope") url("../FONTS/Lato-Black.woff2") format("woff2"),
-    url("../FONTS/Lato-Black.woff") format("woff"),
-    url("../FONTS/Lato-Black.eot") format("eot");
+  src: url("../FONTS/Lato-Regular.woff2") format("woff2"),
+       url("../FONTS/Lato-Regular.woff") format("woff"),
+       url("../FONTS/Lato-Regular.eot") format("eot");
   font-display: swap;
 }
+
 @font-face {
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 700;
   font-style: normal;
-  src: local("Manrope") url("../FONTS/Lato-bold.woff2") format("woff2"),
-    url("../FONTS/Lato-bold.woff") format("woff"),
-    url("../FONTS/Lato-bold.eot") format("eot");
+  src: url("../FONTS/Lato-Bold.woff2") format("woff2"),
+       url("../FONTS/Lato-Bold.woff") format("woff"),
+       url("../FONTS/Lato-Bold.eot") format("eot");
   font-display: swap;
 }
+
 @font-face {
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 900;
   font-style: normal;
-  src: local("Manrope") url("../FONTS/Lato-black.woff2") format("woff2"),
-    url("../FONTS/Lato-black.woff") format("woff"),
-    url("../FONTS/Lato-black.eot") format("eot");
+  src: url("../FONTS/Lato-Black.woff2") format("woff2"),
+       url("../FONTS/Lato-Black.woff") format("woff"),
+       url("../FONTS/Lato-Black.eot") format("eot");
   font-display: swap;
 }
