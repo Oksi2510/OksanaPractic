@@ -763,11 +763,12 @@ body {
   margin: 0 105px;
 }
 .testimonials__slide {
+  padding: 0 105px;
 }
 .wrapper__slide-content {
   display: flex;
   max-width: 810px;
-  margin: 64px;
+  margin: 64px 0;
 }
 .testimonials__quotes-box {
   margin-right: 30px;
