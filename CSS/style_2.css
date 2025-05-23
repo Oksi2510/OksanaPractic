@@ -1,3 +1,6 @@
+/* ________________________________ALL__________________________________ */
+/* ________________________________ALL__________________________________ */
+/* ________________________________ALL__________________________________ */
 html,
 body {
   color: #424551;
@@ -85,12 +88,16 @@ body {
   margin-bottom: -46px;
 }
 .main__team {
-  background-color: #f4f5f6;
+  background: url("../IMG/decor/team.svg")  calc(50% + 116px) calc(50% + -130px)   no-repeat, #f4f5f6;
+  padding-bottom: 180px;
+}
+.main__testimonials {
+  padding-bottom: 250px;
 }
 
-/* __________________________________________________________________ */
-/* __________________________________________________________________ */
-/* __________________________________________________________________ */
+/* ________________________________HEADER__________________________________ */
+/* ________________________________HEADER__________________________________ */
+/* ________________________________HEADER__________________________________ */
 .header {
   background: url("../IMG/decor/decor_1.svg") -50% 50% / cover no-repeat,
     linear-gradient(56deg, rgba(255, 63, 58, 0.2), rgba(247, 94, 5, 0.2));
@@ -171,9 +178,6 @@ body {
 .button__user-aunt:hover {
   color: #ff3f3a;
 }
-/* __________________________________________________________________ */
-/* __________________________________________________________________ */
-/* __________________________________________________________________ */
 
 .header__main {
   margin: auto 0;
@@ -247,10 +251,9 @@ body {
   line-height: 130%;
   margin-right: 12px;
 }
-/* _______________________________________________________________ */
-/* __________________________________________________________________ */
-/* __________________________________________________________________ */
-
+/* ________________________________ABOUT__________________________________ */
+/* ________________________________ABOUT__________________________________ */
+/* ________________________________ABOUT__________________________________ */
 .about__inner {
   display: flex;
   align-items: flex-end;
@@ -352,9 +355,9 @@ body {
   letter-spacing: 1px;
   margin-right: 16px;
 }
-/* _______________________________________________________________ */
-/* __________________________________________________________________ */
-/* __________________________________________________________________ */
+/* ________________________________DIRECTION__________________________________ */
+/* ________________________________DIRECTION__________________________________ */
+/* ________________________________DIRECTION__________________________________ */
 
 .direction__inner {
   position: relative;
@@ -482,7 +485,7 @@ body {
 }
 .direction__link-btn::after {
   content: "";
-  background: url("../IMG/icon/Line_to_right.svg") 0 0 / 100% no-repeat;
+  background: url("../IMG/icon/Line_to_right_red.svg") 0 0 / 100% no-repeat;
   width: 18px;
   height: 12px;
   display: inline-block;
@@ -517,9 +520,9 @@ body {
 .Development .direction__link-teg {
   background-color: #7772f1;
 }
-/* __________________________________________________________________ */
-/* __________________________________________________________________ */
-/* __________________________________________________________________ */
+/* _________________________________CERT_________________________________ */
+/* _________________________________CERT_________________________________ */
+/* _________________________________CERT_________________________________ */
 
 .cert__inner {
   display: flex;
@@ -564,22 +567,15 @@ body {
     0px 4px 4px -4px rgba(30, 33, 44, 0.05);
   border-radius: 4px;
 }
-/* __________________________________________________________________ */
-/* __________________________________________________________________ */
-/* __________________________________________________________________ */
 
-.team__inner {
-}
+/* _________________________________TEAM_________________________________ */
+/* _________________________________TEAM_________________________________ */
+/* _________________________________TEAM_________________________________ */
+
 .team__heading {
   position: relative;
   padding: 165px 0 0 0;
   margin-bottom: 60px;
-}
-.heading {
-}
-.heading__uptitle {
-}
-.heading__title {
 }
 .team__slide-arrows {
   position: absolute;
@@ -611,16 +607,8 @@ body {
 .team__slide-arrow:hover svg path {
   fill: #fff;
 }
-
-.team__slide-prev {
-}
 .team__slider .slick-list {
-margin: 0 -15px;
-}
-.team__slider-inner  {
-
-}
-.team__slide {
+  margin: 0 -15px;
 }
 .team__slider-box {
   display: flex;
@@ -639,9 +627,7 @@ margin: 0 -15px;
   border-radius: 4px;
   overflow: hidden;
 }
-.team__image {
 
-}
 .team__image img {
   width: 100%;
 }
@@ -698,4 +684,155 @@ margin: 0 -15px;
   color: #787a80;
   font-weight: 400;
   line-height: 160%;
+}
+/* _________________________________TESTIMONIALS_________________________________ */
+/* _________________________________TESTIMONIALS_________________________________ */
+/* _________________________________TESTIMONIALS_________________________________ */
+
+.testimonials {
+  background: #f4f5f6;
+  position: relative;
+}
+.testimonials::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  background: url("../IMG/decor/testimonials.svg") 0 0 / 100% no-repeat;
+  transform: translate(-45.5%, -60%);
+  width: 1971px;
+  height: 816px;
+}
+
+.testimonials-inner {
+  position: relative;
+}
+
+.test {
+  display: flex;
+}
+
+.testimonials__heading {
+  margin-bottom: 60px;
+}
+
+.testimonials__slider-inner {
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonials__slide-arrow {
+  position: absolute;
+  display: flex;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  background-color: transparent;
+  cursor: pointer;
+}
+.testimonials__slide-arrow:hover {
+  background-color: #ff3f3a;
+}
+.testimonials__slide-arrow svg path {
+  transition: fill 0.3s;
+}
+.testimonials__slide-arrow:hover svg path {
+  fill: #fff;
+}
+.testimonials__slide-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.testimonials__slide-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.testimonials__slider {
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 0 105px;
+}
+.testimonials__slide {
+}
+.wrapper__slide-content {
+  display: flex;
+  max-width: 810px;
+  margin: 64px;
+}
+.testimonials__quotes-box {
+  margin-right: 30px;
+}
+.testimonials__slide-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials__slide-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 15px;
+}
+
+.testimonials__slide-author {
+  display: flex;
+}
+
+.testimonials__avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.testimonials__info-aithor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials__info-name {
+  color: #1e212c;
+  margin-bottom: 4px;
+}
+.testimonials__info-position {
+  color: #787a80;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.testimonials__slide-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+.testimonials__slide-dots li {
+  display: inline-block;
+  margin: 0 6px;
+}
+.testimonials__slide-dots li button {
+  padding: 30px 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.testimonials__slide-dots li button::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #b3b7bc;
+  border-radius: 3px;
+  margin: auto;
+}
+.testimonials__slide-dots li.slick-active button::before {
+  background-color: #424551;
 }

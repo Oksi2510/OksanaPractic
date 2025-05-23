@@ -27,6 +27,22 @@ $(function () {
     $(".team__slider").slick("slickNext");
   });
 
-
-  
+  $(".testimonials__slider").slick({
+    draggable: false,
+    arrows: false,
+    dots: true,
+    appendDots: $(".testimonials__dots-wrapper"),
+    dotsClass: "testimonials__slide-dots",
+    customPaging: function (slider, i) {
+      return '<button type="button"></button>'; // ← без текста, без цифр
+    },
+  });
+  $(".testimonials__slide-prev").on("click", function (e) {
+    e.preventDefault();
+    $(".testimonials__slider").slick("slickPrev");
+  });
+  $(".testimonials__slide-next").on("click", function (e) {
+    e.preventDefault();
+    $(".testimonials__slider").slick("slickNext");
+  });
 });
