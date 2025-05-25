@@ -45,4 +45,22 @@ $(function () {
     e.preventDefault();
     $(".testimonials__slider").slick("slickNext");
   });
+
+  // $(".program__acc__link").on("click", function (e) {
+  //   e.preventDefault();
+  //   $(this).toggleClass("program__acc__link--active");
+  //   $(this).children(".program__acc-text").slideToggle(300); // 300 — это длительность в мс
+  // });
+  $(".program__acc__link").on("click", function (e) {
+    e.preventDefault();
+    if ($(this).hasClass("program__acc__link--active")) {
+      $(this).removeClass("program__acc__link--active");
+      $(this).children(".program__acc-text").slideUp();
+    } else {
+      $(".program__acc__link").removeClass("program__acc__link--active");
+      $(".program__acc-text").slideUp();
+      $(this).addClass("program__acc__link--active");
+      $(this).children(".program__acc-text").slideDown();
+    }
+  });
 });
