@@ -102,6 +102,9 @@ body {
 .main__program {
   padding: 115px 0 185px 0;
 }
+.main__blog {
+  padding-bottom: 210px;
+}
 
 /* ________________________________HEADER__________________________________ */
 /* ________________________________HEADER__________________________________ */
@@ -955,7 +958,116 @@ body {
   font-weight: 400;
 }
 .program__acc__link--active .program__acc-text {
-display: block;
+  display: block;
 }
 .program__image {
+}
+/* _________________________________BLOG_________________________________ */
+/* _________________________________BLOG_________________________________ */
+/* _________________________________BLOG_________________________________ */
+
+.blog {
+}
+.blog__inner {
+}
+.blog__head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.blog__heading {
+}
+.blog__user-btn {
+  max-height: 52px;
+}
+.blog__content {
+}
+.blog__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.blog__list-item {
+  width: 390px;
+  overflow: hidden;
+  margin-right: 30px;
+  position: relative;
+}
+.blog__list-item:last-child {
+  margin-right: 0;
+}
+.blog__link {
+}
+.blog__img-box {
+  margin-bottom: 16px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.blog__img-box img {
+  width: 100%;
+}
+.blog__info-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.blog__info-list > span {
+  margin: 0 12px;
+  height: 12px;
+  width: 2px;
+  background-color: #787a80;
+  border-radius: 2px;
+}
+.blog__info-item {
+  color: #787a80;
+  font-size: 14px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+}
+.blog__info-item svg {
+  margin-right: 9px;
+}
+
+.blog__item-name {
+  color: #1e212c;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 8px;
+}
+.blog__item-text {
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.blog__link-btn {
+  color: #1e212c;
+  transition: all 0.3s;
+}
+.blog__link:hover .blog__link-btn {
+  color: #ff3f3a;
+}
+.blog__link-btn::after {
+  content: "";
+  background: url("../IMG/icon/Line_to_right_red.svg") 0 0 / 100% no-repeat;
+  width: 18px;
+  height: 12px;
+  display: inline-block;
+  margin-left: 11px;
+  vertical-align: middle;
+}
+.blog__content-type {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 1px 8px;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.blog__content-type svg {
+  margin-right: 4px;
 }
