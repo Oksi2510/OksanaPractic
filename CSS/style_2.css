@@ -1694,6 +1694,12 @@ body {
   .header__row-list {
     text-wrap: wrap;
   }
+
+  /* ------------------------------------- */
+  .about__content {
+    width: 550px;
+  }
+
 }
 
 /* ============================ 1100 ==================================== */
@@ -1814,13 +1820,41 @@ body {
     margin: 0;
     padding: 20px 75px;
   }
-  /* --------------------------------------- */
+
+  /* ---------------------------------- */
+  .main__about {
+    padding: 90px 0 160px;
+  }
+
+  .heading__title {
+    font-size: 35px;
+  }
+
+  .about__content {
+    width: 430px;
+  }
+
+  .about__img {
+    width: 400px;
+    margin: 0;
+  }
+
+  .about__content-buttons {
+    width: 430px;
+  }
+
+  .about__content-btn {
+    margin-right: auto;
+  }
 
 
 }
 
 /* ============================ 900 ==================================== */
 @media (max-width: 900px) {
+      .header__content-inner {
+    margin: 0 auto;
+  }
   .header__title {
     font-size: 45px;
     max-width: 400px;
@@ -1834,6 +1868,43 @@ body {
     display: none;
   }
 
+  /* --------------------------- */
+  .about__img {
+    display: none;
+  }
+
+  .about__createx {
+    margin: 0 auto;
+  }
+
+}
+
+/* ============================ 600 ==================================== */
+@media (max-width: 600px) {
+
+    .header__content-buttons {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__content-btn {
+    margin: 15px 0 ;
+    width: 100%;
+  }
+  /* ----------------------- */
+  .about__content {
+    width: 350px;
+  }
+
+  .about__content-buttons {
+    width: 350px;
+    flex-direction: column;
+    margin: 0;
+  }
+  .about__content-btn {
+    margin: 15px 0;
+  }
 }
 
 /* ============================ 430 ==================================== */
@@ -1846,17 +1917,13 @@ body {
   .header__content-inner {
     max-width: 326px;
     /* padding: 22px; */
-    margin: 0 auto;
   }
+  /* ------------------- */
+.about__content {
+  max-width: 326px;
+}
+.about__content-buttons {
+    max-width: 326px;
+}
 
-  .header__content-buttons {
-    max-width: 380px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .header__content-btn {
-    margin: 20px 30px 20px 0;
-    width: 100%;
-  }
 }
