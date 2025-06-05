@@ -63,16 +63,28 @@ $(function () {
     } else {
       $(".header__top").addClass("header__top--open");
     }
+
+
     if ($(".header__top").hasClass("header__top--open")) {
       $(".overlay").addClass("overlay--show");
     } else {
       $(".overlay").removeClass("overlay--show");
     }
+
     if ($(".header__top").hasClass("header__top--open")) {
       $(".burger").addClass("burger--open");
     } else {
       $(".burger").removeClass("burger--open");
     }
-  });
+    $(".header__top").on("click", "a", function () {
+      $(".header__top").removeClass("header__top--open");
+      $(".overlay").removeClass("overlay--show");
+    });
 
+        $(".overlay--show").on("click", function () {
+      $(".header__top").removeClass("header__top--open");
+      $(".overlay").removeClass("overlay--show");
+    });
+    
+  });
 });
