@@ -1676,6 +1676,27 @@ body {
 /* _________________________________MEDIA_________________________________ */
 /* _________________________________MEDIA_________________________________ */
 /* _________________________________MEDIA_________________________________ */
+/* ============================ 1200 ==================================== */
+@media (max-width: 1200px) {
+  .header__content-inner {
+    margin-right: 0;
+  }
+
+  .header__title {
+    font-size: 52px;
+    max-width: 400px;
+  }
+
+  .header_img {
+    max-width: 450px;
+  }
+
+  .header__row-list {
+    text-wrap: wrap;
+  }
+}
+
+/* ============================ 1100 ==================================== */
 @media (max-width: 1100px) {
   .overlay--show {
     visibility: visible;
@@ -1793,10 +1814,49 @@ body {
     margin: 0;
     padding: 20px 75px;
   }
+  /* --------------------------------------- */
+
+
 }
 
+/* ============================ 900 ==================================== */
+@media (max-width: 900px) {
+  .header__title {
+    font-size: 45px;
+    max-width: 400px;
+  }
+
+  .header_img {
+    display: none;
+  }
+
+  .header__row {
+    display: none;
+  }
+
+}
+
+/* ============================ 430 ==================================== */
 @media (max-width: 430px) {
   .header__top {
+    width: 100%;
+  }
+
+  /* ------------------- */
+  .header__content-inner {
+    max-width: 326px;
+    /* padding: 22px; */
+    margin: 0 auto;
+  }
+
+  .header__content-buttons {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__content-btn {
+    margin: 20px 30px 20px 0;
     width: 100%;
   }
 }

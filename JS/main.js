@@ -81,10 +81,10 @@ $(function () {
       $(".overlay").removeClass("overlay--show");
     });
 
-        $(".overlay--show").on("click", function () {
+    $(".overlay--show").on("click", function () {
       $(".header__top").removeClass("header__top--open");
       $(".overlay").removeClass("overlay--show");
     });
-    
+
   });
 });
