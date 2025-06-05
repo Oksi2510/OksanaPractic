@@ -1,6 +1,5 @@
 $(function () {
   Fancybox.bind("[data-fancybox]", {
-    // опции
   });
 
   var mixer = mixitup(".directions__list");
@@ -57,4 +56,23 @@ $(function () {
       $(this).children(".program__acc-text").slideDown();
     }
   });
+  $(".burger").on("click", function (e) {
+    e.preventDefault();
+    if ($(".header__top").hasClass("header__top--open")) {
+      $(".header__top").removeClass("header__top--open");
+    } else {
+      $(".header__top").addClass("header__top--open");
+    }
+    if ($(".header__top").hasClass("header__top--open")) {
+      $(".overlay").addClass("overlay--show");
+    } else {
+      $(".overlay").removeClass("overlay--show");
+    }
+    if ($(".header__top").hasClass("header__top--open")) {
+      $(".burger").addClass("burger--open");
+    } else {
+      $(".burger").removeClass("burger--open");
+    }
+  });
+
 });
