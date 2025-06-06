@@ -1676,7 +1676,8 @@ body {
 /* _________________________________MEDIA_________________________________ */
 /* _________________________________MEDIA_________________________________ */
 /* _________________________________MEDIA_________________________________ */
-/* ============================ 1200 ==================================== */
+/* ============================ WIDTH ===================================== */
+/* ============================= 1200 ===================================== */
 @media (max-width: 1200px) {
   .header__content-inner {
     margin-right: 0;
@@ -1715,7 +1716,7 @@ body {
   }
 
   .header {
-    padding-top: 92px;
+    padding-top: 0;
   }
 
   .burger {
@@ -1852,9 +1853,10 @@ body {
 
 /* ============================ 900 ==================================== */
 @media (max-width: 900px) {
-      .header__content-inner {
+  .header__content-inner {
     margin: 0 auto;
   }
+
   .header__title {
     font-size: 45px;
     max-width: 400px;
@@ -1868,6 +1870,19 @@ body {
     display: none;
   }
 
+  .header__body-inner {
+    height: 100%;
+  }
+
+  .header__main {
+    margin: 0 0;
+    height: 100%;
+  }
+
+  .header__content {
+    height: 100%;
+  }
+
   /* --------------------------- */
   .about__img {
     display: none;
@@ -1877,34 +1892,97 @@ body {
     margin: 0 auto;
   }
 
+  /* --------------------------- */
+  .about__numbers {
+    justify-content: space-evenly;
+    align-self: normal;
+  }
+
+  .about__numbers-inner {
+    font-size: 16px;
+
+  }
+
+  .about__numbers-inner span {
+    font-size: 35px;
+
+  }
+
+  /* -------------------------- */
+  .direction__filter-btn {
+    margin: 0 5px;
+  }
+    .directions__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: stretch;
+    gap: 30px;
+  }
 }
+
 
 /* ============================ 600 ==================================== */
 @media (max-width: 600px) {
 
-    .header__content-buttons {
+  .header__content-buttons {
     max-width: 380px;
     display: flex;
     flex-direction: column;
   }
 
   .header__content-btn {
-    margin: 15px 0 ;
+    margin: 15px 0;
     width: 100%;
   }
+
   /* ----------------------- */
+  .about__createx {
+    width: 326px;
+  }
+
   .about__content {
-    width: 350px;
+    width: 326px;
   }
 
   .about__content-buttons {
-    width: 350px;
+    width: 326px;
     flex-direction: column;
-    margin: 0;
   }
+
   .about__content-btn {
     margin: 15px 0;
+    width: 100%;
   }
+
+  /* ------------------------- */
+  .about__values {
+    flex-direction: column;
+  }
+
+  .about__img-box {
+    margin-bottom: 10px;
+  }
+
+  /* -------------------------- */
+  .direction__filter-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 30px);
+    gap: 20px;
+  }
+
+  .direction__filter-btn {
+    margin: 0;
+  }
+    .directions__list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: stretch;
+    gap: 30px;
+  }
+
+
+
 }
 
 /* ============================ 430 ==================================== */
@@ -1918,12 +1996,27 @@ body {
     max-width: 326px;
     /* padding: 22px; */
   }
+
   /* ------------------- */
-.about__content {
-  max-width: 326px;
-}
-.about__content-buttons {
-    max-width: 326px;
+
+
+
+
+
 }
 
+/* ============================ HEIGHT ===================================== */
+/* ============================== 430 ====================================== */
+@media (max-height: 500px) {
+  .header__nav-link {
+    padding: 10px 75px;
+  }
+
+  .header__user-nav {
+    margin: 0;
+  }
+
+  .header__user-btn {
+    margin: 10px 0 0 0;
+  }
 }
