@@ -15,6 +15,26 @@ $(function () {
     infinite: true,
     speed: 300,
     draggable: false,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });
   $(".team__slide-prev").on("click", function (e) {
     e.preventDefault();
@@ -24,6 +44,7 @@ $(function () {
   $(".team__slide-next").on("click", function (e) {
     e.preventDefault();
     $(".team__slider").slick("slickNext");
+
   });
 
   $(".testimonials__slider").slick({
