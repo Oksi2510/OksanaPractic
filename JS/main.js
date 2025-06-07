@@ -15,6 +15,7 @@ $(function () {
     infinite: true,
     speed: 300,
     draggable: false,
+
     responsive: [
       {
         breakpoint: 1100,
@@ -31,7 +32,9 @@ $(function () {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
+          draggable: true,
+
         }
       }
     ]
@@ -56,6 +59,14 @@ $(function () {
     customPaging: function (slider, i) {
       return '<button type="button"></button>'; // ← без текста, без цифр
     },
+        responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          draggable: true,
+        }
+      }
+    ]
   });
   $(".testimonials__slide-prev").on("click", function (e) {
     e.preventDefault();
